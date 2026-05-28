@@ -1,145 +1,308 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UTabitat - Conciencia Ambiental en Iquique</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitTableHub - Intelligent University Scheduling</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Header / Navbar -->
-  <header class="navbar">
-    <div class="logo">UTabitat</div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#problemas">Problemas</a></li>
-        <li><a href="#comunidad">Comunidad</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#participa">Participa</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">📊</span>
+                <span class="logo-text">GitTableHub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact" class="nav-cta">Get Started</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
 
-  <!-- Sección de Inicio -->
-  <section id="inicio" class="hero">
-    <video autoplay muted loop class="background-video">
-      <source src="iquique-nature.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-      <h1>Bienvenidos a UTabitat</h1>
-      <p>Iquique, como otras partes del mundo, se ve afectado por diferentes problemáticas ambientales...</p>
-      <a href="#problemas" class="btn">Explora los problemas ambientales</a>
-    </div>
-  </section>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Say Goodbye to Schedule Chaos</h1>
+            <p class="hero-subtitle">Intelligent scheduling that generates conflict-free university timetables in seconds</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">Start Free Trial</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('how-it-works')">Learn More</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">10s</span>
+                    <span class="stat-label">Schedule generation</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Conflict-free</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Scalability</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Problemas Ambientales -->
-  <section id="problemas" class="section">
-    <h2>¿Qué está pasando en nuestro entorno?</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="contaminacion.jpg" alt="Contaminación en playas">
-        <h3>Contaminación</h3>
-        <p>Plásticos y residuos afectan las costas de Iquique y dañan su biodiversidad.</p>
-      </div>
-      <div class="card">
-        <img src="basurales.jpg" alt="Basurales ilegales">
-        <h3>Basurales ilegales</h3>
-        <p>La mala gestión de residuos ha generado microbasurales en áreas urbanas.</p>
-      </div>
-      <div class="card">
-        <img src="agua.jpg" alt="Escasez de agua">
-        <h3>Escasez de agua</h3>
-        <p>La desertificación y el consumo excesivo amenazan el recurso hídrico.</p>
-      </div>
-    </div>
-  </section>
+    <!-- PROBLEM SECTION -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title">The Problem</h2>
+            <p class="section-subtitle">Universities in Tarapacá face inefficient scheduling processes</p>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Months of Work</h3>
+                    <p>Administrators spend months manually creating schedules using outdated methods</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">😤</div>
+                    <h3>Student Frustration</h3>
+                    <p>Students face 5+ hour gaps between classes, wasting time on campus</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❌</div>
+                    <h3>Resource Waste</h3>
+                    <p>Poor room and professor allocation leads to inefficient resource usage</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ¿Cómo afecta a la comunidad? -->
-  <section id="comunidad" class="section alt">
-    <h2>Impacto en la Comunidad</h2>
-    <ul class="impact-list">
-      <li><strong>Salud pública:</strong> aumento de enfermedades respiratorias por contaminación.</li>
-      <li><strong>Biodiversidad:</strong> pérdida de especies costeras y terrestres.</li>
-      <li><strong>Turismo:</strong> impacto negativo en la imagen ambiental de la ciudad.</li>
-    </ul>
-  </section>
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why GitTableHub</h2>
+            <p class="section-subtitle">The ultimate solution for university scheduling</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Automated Generation</h3>
+                    <p>Create optimized schedules in seconds instead of months. Reduce administrative burden significantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Zero Conflicts</h3>
+                    <p>Advanced algorithms ensure no professor, room, or student scheduling conflicts ever occur.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Minimize Gaps</h3>
+                    <p>Intelligent distribution of classes reduces idle time between courses for students and professors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">04</div>
+                    <h3>Resource Optimization</h3>
+                    <p>Maximize room utilization and ensure efficient professor workload distribution across all programs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">05</div>
+                    <h3>Multi-Career Support</h3>
+                    <p>Handle unlimited careers simultaneously with complex scheduling constraints automatically.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">06</div>
+                    <h3>Real-time Sync</h3>
+                    <p>Collaborative platform with real-time updates and version control for schedule management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Educación Ambiental -->
-  <section id="educacion" class="section">
-    <h2>Educación Ambiental</h2>
-    <div class="resources">
-      <iframe src="https://www.youtube.com/embed/example" title="Video educación" frameborder="0"></iframe>
-      <div>
-        <p><strong>Descarga nuestra guía:</strong> <a href="guia.pdf" target="_blank">Reduciendo tu huella ecológica</a></p>
-        <p><strong>Infografía:</strong> <a href="infografia.jpg" target="_blank">Separación de residuos</a></p>
-      </div>
-    </div>
-  </section>
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">GitTableHub Synchronization Algorithm</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Input Data</h3>
+                    <p>Upload courses, professors, rooms, and availability constraints</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Validation</h3>
+                    <p>System validates all hard constraints and requirements</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Algorithm</h3>
+                    <p>Advanced algorithm creates optimal schedule assignments</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Optimization</h3>
+                    <p>Fine-tune schedule to minimize gaps and maximize efficiency</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Review</h3>
+                    <p>Administrators review and approve the generated schedule</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <h3>Deploy</h3>
+                    <p>Publish schedule to students and faculty in seconds</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Proyectos e Iniciativas -->
-  <section id="proyectos" class="section alt">
-    <h2>Proyectos e Iniciativas</h2>
-    <div class="gallery">
-      <img src="limpieza-playa.jpg" alt="Limpieza playa">
-      <img src="huerto-escolar.jpg" alt="Huerto escolar">
-      <img src="charla-comunitaria.jpg" alt="Charla ambiental">
-    </div>
-  </section>
+    <!-- TEAM SECTION -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">Specialized professionals building the future of scheduling</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-icon">💻</div>
+                    <h3>Frontend Developer</h3>
+                    <p>Designs intuitive interfaces that make scheduling simple and accessible for all users.</p>
+                    <ul class="team-skills">
+                        <li>UI/UX Design</li>
+                        <li>Interactive Prototypes</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <div class="team-icon">⚙️</div>
+                    <h3>Backend Developer</h3>
+                    <p>Implements the core algorithm and optimization logic that powers GitTableHub.</p>
+                    <ul class="team-skills">
+                        <li>Algorithm Design</li>
+                        <li>Performance Optimization</li>
+                        <li>Data Processing</li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <div class="team-icon">🏗️</div>
+                    <h3>Software Architect</h3>
+                    <p>Designs scalable system architecture ensuring reliability and performance at scale.</p>
+                    <ul class="team-skills">
+                        <li>System Design</li>
+                        <li>Database Architecture</li>
+                        <li>Infrastructure Planning</li>
+                    </ul>
+                </div>
+                <div class="team-card">
+                    <div class="team-icon">🔒</div>
+                    <h3>Cybersecurity Analyst</h3>
+                    <p>Protects sensitive educational data with enterprise-grade security protocols.</p>
+                    <ul class="team-skills">
+                        <li>Security Protocols</li>
+                        <li>Vulnerability Analysis</li>
+                        <li>Access Control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Participa -->
-  <section id="participa" class="section">
-    <h2>Participa</h2>
-    <form class="form">
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="¿Cómo te gustaría ayudar?" required></textarea>
-      <button type="submit">¡Quiero participar!</button>
-    </form>
-  </section>
+    <!-- PRICING SECTION -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Flexible Pricing</h2>
+            <p class="section-subtitle">Choose the plan that fits your institution</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <p class="price">Free</p>
+                    <p class="price-desc">Perfect for testing</p>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 5 careers</li>
+                        <li>✓ Basic scheduling</li>
+                        <li>✓ Email support</li>
+                        <li>✗ Advanced optimization</li>
+                    </ul>
+                    <button class="btn btn-secondary">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Professional</h3>
+                    <p class="price">$99/mo</p>
+                    <p class="price-desc">For growing universities</p>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited careers</li>
+                        <li>✓ Advanced optimization</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Real-time sync</li>
+                    </ul>
+                    <button class="btn btn-primary">Start Trial</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p class="price">Custom</p>
+                    <p class="price-desc">For large institutions</p>
+                    <ul class="pricing-features">
+                        <li>✓ Multi-campus support</li>
+                        <li>✓ Custom integration</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ SLA guarantee</li>
+                    </ul>
+                    <button class="btn btn-secondary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Blog -->
-  <section id="blog" class="section alt">
-    <h2>Noticias y Artículos</h2>
-    <div class="blog-list">
-      <article>
-        <h3>Nueva ordenanza de reciclaje</h3>
-        <p>Iquique establece nuevas políticas para la recolección y separación de residuos.</p>
-      </article>
-      <article>
-        <h3>Voluntariado en Playa Brava</h3>
-        <p>Más de 200 personas participaron en una jornada de limpieza costera.</p>
-      </article>
-    </div>
-  </section>
+    <!-- CTA SECTION -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Scheduling?</h2>
+            <p>Join universities across Tarapacá that are already saving time and reducing frustration</p>
+            <button class="btn btn-primary btn-large" onclick="handleCTA()">Get Started Free</button>
+        </div>
+    </section>
 
-  <!-- Contacto y Recursos -->
-  <section id="contacto" class="section">
-    <h2>Contacto y Recursos</h2>
-    <form class="form">
-      <input type="text" placeholder="Nombre">
-      <input type="email" placeholder="Correo">
-      <textarea placeholder="Mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p>Encuéntranos también en redes sociales.</p>
-    <div class="social-icons">
-      <a href="#">Instagram</a>
-      <a href="#">Facebook</a>
-      <a href="#">TikTok</a>
-    </div>
-  </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GitTableHub</h4>
+                    <p>Intelligent scheduling for modern universities</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#how-it-works">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#team">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GitTableHub. All rights reserved. | Based in Tarapacá, Chile</p>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 UTabitat | Hecho con conciencia para Iquique.</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
